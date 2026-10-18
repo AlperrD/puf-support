@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="tr"
+  data-title-tr="Puf Blog · iPhone depolama ve fotoğraf temizliği rehberi"
+  data-title-de="Puf Blog · Ratgeber für iPhone-Speicher und Fotos"
+  data-title-en="Puf Blog · iPhone storage and photo cleanup guide"
+  data-desc-tr="iPhone depolama alanı nasıl boşaltılır, kopya fotoğraflar nasıl silinir, videolar nasıl küçültülür? Adım adım rehberler."
+  data-desc-de="Wie gibt man iPhone-Speicher frei, löscht doppelte Fotos und verkleinert Videos? Schritt-für-Schritt-Anleitungen."
+  data-desc-en="How to free up iPhone storage, delete duplicate photos and shrink videos. Step-by-step guides.">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Puf Blog · iPhone depolama ve fotoğraf temizliği rehberi</title>
+  <meta name="description" content="iPhone depolama alanı nasıl boşaltılır, kopya fotoğraflar nasıl silinir, videolar nasıl küçültülür? Adım adım rehberler.">
+  <meta name="theme-color" content="#0b0f17">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Puf Blog",
+    "description": "Guides on freeing up iPhone storage, deleting duplicate photos, compressing videos and managing iCloud Photos.",
+    "inLanguage": ["tr", "de", "en"],
+    "publisher": { "@type": "Organization", "name": "Puf", "logo": { "@type": "ImageObject", "url": "logo.png" } },
+    "blogPost": [
+      { "@type": "BlogPosting", "headline": "How to free up storage on your iPhone", "url": "blog.html#storage", "datePublished": "2026-10-18" },
+      { "@type": "BlogPosting", "headline": "How to find and delete duplicate photos on iPhone", "url": "blog.html#duplicates", "datePublished": "2026-10-18" },
+      { "@type": "BlogPosting", "headline": "How much space do iPhone videos take, and how to shrink them", "url": "blog.html#videos", "datePublished": "2026-10-18" },
+      { "@type": "BlogPosting", "headline": "Why deleting photos doesn't free space: Recently Deleted", "url": "blog.html#recently-deleted", "datePublished": "2026-10-18" },
+      { "@type": "BlogPosting", "headline": "iCloud Photos and Optimize iPhone Storage explained", "url": "blog.html#icloud", "datePublished": "2026-10-18" },
+      { "@type": "BlogPosting", "headline": "Screenshots and WhatsApp media: the hidden space eaters", "url": "blog.html#screenshots", "datePublished": "2026-10-18" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Why is my iPhone storage still full after deleting photos?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Deleted photos and videos stay in the Recently Deleted album of the Photos app for 30 days. Open Photos > Albums > Recently Deleted, tap Select and Delete All to free the space immediately." } },
+      { "@type": "Question", "name": "How do I find duplicate photos on iPhone?",
+        "acceptedAnswer": { "@type": "Answer", "text": "On iOS 16 and later, open Photos > Albums > Utilities > Duplicates and tap Merge. Similar but not identical shots and blurry photos are not listed there; an app such as Puf can group those on the device." } },
+      { "@type": "Question", "name": "How much storage does one minute of iPhone video use?",
+        "acceptedAnswer": { "@type": "Answer", "text": "With the High Efficiency (HEVC) format, iOS estimates about 60 MB per minute at 1080p 30 fps, about 170 MB at 4K 30 fps and about 400 MB at 4K 60 fps." } },
+      { "@type": "Question", "name": "Does deleting a photo on iPhone delete it from iCloud?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, when iCloud Photos is turned on the library is synced, so deleting a photo on the iPhone removes it from iCloud and your other devices as well." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" data-keep-lang>
+      <img src="logo.png" alt="Puf" width="36" height="36">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
+    <nav class="nav" id="site-nav">
+      <a href="index.html#features" data-keep-lang><span data-lang="tr">Özellikler</span><span data-lang="de">Funktionen</span><span data-lang="en">Features</span></a>
+      <a href="index.html#pricing" data-keep-lang><span data-lang="tr">Fiyat</span><span data-lang="de">Preis</span><span data-lang="en">Pricing</span></a>
+      <a href="blog.html" data-keep-lang aria-current="page">Blog</a>
+      <a href="privacy.html" data-keep-lang><span data-lang="tr">Gizlilik</span><span data-lang="de">Datenschutz</span><span data-lang="en">Privacy</span></a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+        <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Puf Blog</span>
+      <h1>
+        <span data-lang="tr">iPhone depolama ve fotoğraf temizliği rehberi</span>
+        <span data-lang="de">Ratgeber für iPhone-Speicher und Fotos</span>
+        <span data-lang="en">The iPhone storage and photo cleanup guide</span>
+      </h1>
+      <p class="lead">
+        <span data-lang="tr">"Saklama Alanı Dolu" uyarısını kalıcı olarak çözmek için bilmen gerekenler: iOS menüleri, gerçek dosya boyutları ve adım adım çözümler.</span>
+        <span data-lang="de">Was du wissen musst, um „Speicher voll“ dauerhaft loszuwerden: die richtigen iOS-Menüs, echte Dateigrößen und Lösungen Schritt für Schritt.</span>
+        <span data-lang="en">What you need to know to fix "Storage Full" for good: the right iOS menus, real file sizes and step-by-step fixes.</span>
+      </p>
+      <p class="meta">
+        <span data-lang="tr">Güncelleme: 18 Ekim 2026 · iOS 18 ve sonrası için</span>
+        <span data-lang="de">Aktualisiert: 18. Oktober 2026 · für iOS 18 und neuer</span>
+        <span data-lang="en">Updated: October 18, 2026 · for iOS 18 and later</span>
+      </p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <nav class="post-list" aria-label="Posts" style="margin-bottom: 40px;">
+      <a class="post-link" href="#storage">
+        <strong><span data-lang="tr">iPhone depolama alanı nasıl boşaltılır?</span><span data-lang="de">iPhone-Speicher freigeben: so geht's</span><span data-lang="en">How to free up storage on your iPhone</span></strong>
+        <span><span data-lang="tr">Nereye bakmalı, neyi silmeli</span><span data-lang="de">Wo du suchst, was du löschst</span><span data-lang="en">Where to look and what to delete</span></span>
+      </a>
+      <a class="post-link" href="#duplicates">
+        <strong><span data-lang="tr">Kopya ve benzer fotoğraflar nasıl silinir?</span><span data-lang="de">Doppelte und ähnliche Fotos löschen</span><span data-lang="en">Deleting duplicate and similar photos</span></strong>
+        <span><span data-lang="tr">"Kopyalar" albümü ve ötesi</span><span data-lang="de">Das Album „Duplikate“ und mehr</span><span data-lang="en">The Duplicates album and beyond</span></span>
+      </a>
+      <a class="post-link" href="#videos">
+        <strong><span data-lang="tr">Videolar ne kadar yer kaplar, nasıl küçültülür?</span><span data-lang="de">Wie viel Platz Videos brauchen und wie du sie verkleinerst</span><span data-lang="en">How much space videos take, and how to shrink them</span></strong>
+        <span><span data-lang="tr">Dakika başına MB tablosu</span><span data-lang="de">Tabelle: MB pro Minute</span><span data-lang="en">MB-per-minute table</span></span>
+      </a>
+      <a class="post-link" href="#recently-deleted">
+        <strong><span data-lang="tr">Fotoğraf sildim ama yer açılmadı</span><span data-lang="de">Fotos gelöscht, aber kein Platz frei</span><span data-lang="en">I deleted photos but got no space back</span></strong>
+        <span><span data-lang="tr">"Son Silinenler"in 30 günü</span><span data-lang="de">Die 30 Tage von „Zuletzt gelöscht“</span><span data-lang="en">The 30 days of Recently Deleted</span></span>
+      </a>
+      <a class="post-link" href="#icloud">
+        <strong><span data-lang="tr">iCloud Fotoğrafları ve "Optimize Et"</span><span data-lang="de">iCloud-Fotos und „Speicher optimieren“</span><span data-lang="en">iCloud Photos and "Optimize Storage"</span></strong>
+        <span><span data-lang="tr">Ne zaman işe yarar, ne zaman yaramaz</span><span data-lang="de">Wann es hilft und wann nicht</span><span data-lang="en">When it helps and when it doesn't</span></span>
+      </a>
+      <a class="post-link" href="#screenshots">
+        <strong><span data-lang="tr">Ekran görüntüleri ve WhatsApp medyası</span><span data-lang="de">Bildschirmfotos und WhatsApp-Medien</span><span data-lang="en">Screenshots and WhatsApp media</span></strong>
+        <span><span data-lang="tr">Fark etmeden biriken gigabaytlar</span><span data-lang="de">Gigabytes, die unbemerkt wachsen</span><span data-lang="en">Gigabytes that pile up unnoticed</span></span>
+      </a>
+    </nav>
+
+    <div class="prose" style="max-width: 50rem; margin: 0 auto; padding-bottom: 80px;">
+
+      <!-- 1. Storage overview -->
+      <article class="post" id="storage">
+        <div data-lang="tr" class="flex-lang stack">
+          <header>
+            <h2>iPhone depolama alanı nasıl boşaltılır?</h2>
+            <p class="meta">5 dakikalık okuma</p>
+          </header>
+          <p class="tldr"><b>Kısaca:</b> Önce <span class="path">Ayarlar › Genel › iPhone Saklama Alanı</span> ekranında neyin yer kapladığını gör. Çoğu iPhone'da en büyük pay Fotoğraflar'dadır; kopyaları, büyük videoları ve ekran görüntülerini temizlemek genellikle en hızlı kazançtır.</p>
+          <h3>1. Neyin yer kapladığını kontrol et</h3>
+          <p><span class="path">Ayarlar › Genel › iPhone Saklama Alanı</span> ekranındaki renkli çubuk; Uygulamalar, Fotoğraflar, Mesajlar, iOS ve Sistem Verisi'nin payını gösterir. Listenin en üstündeki uygulamalar en çok yer kaplayanlardır.</p>
+          <h3>2. iOS'un önerilerini uygula</h3>
+          <ul>
+            <li><b>Kullanılmayan Uygulamaları Kaldır:</b> Uygulamayı siler ama belgelerini ve verilerini saklar; tekrar yüklediğinde kaldığın yerden devam edersin.</li>
+            <li><b>Eski sohbetleri sil:</b> <span class="path">Ayarlar › Mesajlar › Mesajları Sakla</span> seçeneğini "1 Yıl" ya da "30 Gün" yap.</li>
+            <li><b>Büyük ekleri gözden geçir:</b> Aynı ekranda Mesajlar'a dokunup "Büyük Ekleri Gözden Geçir"i seç.</li>
+          </ul>
+          <h3>3. Fotoğraf kütüphanesini temizle</h3>
+          <p>Fotoğraflar genellikle en büyük kalemdir ve en çok kazancı da burada elde edersin: kopya ve benzer kareler, bulanık çekimler, unutulmuş ekran kayıtları ve dakikalarca süren 4K videolar. Puf bunları cihazında bulup kategorilere ayırır ve her birinin ne kadar yer kapladığını gösterir.</p>
+          <h3>4. Son Silinenler'i boşalt</h3>
+          <p>Sildiğin fotoğraflar 30 gün boyunca yer kaplamaya devam eder. Alanı hemen geri almak için <a href="#recently-deleted">Son Silinenler albümünü boşalt</a>.</p>
+          <p class="callout">"Sistem Verisi" önbellekleri ve geçici dosyaları içerir; iOS bunları gerektiğinde kendisi temizler. Bu bölümü elle küçültmenin güvenilir bir yolu yoktur.</p>
+        </div>
+
+        <div data-lang="de" class="flex-lang stack">
+          <header>
+            <h2>iPhone-Speicher freigeben: so geht's</h2>
+            <p class="meta">5 Minuten Lesezeit</p>
+          </header>
+          <p class="tldr"><b>Kurz gesagt:</b> Prüfe zuerst unter <span class="path">Einstellungen › Allgemein › iPhone-Speicher</span>, was Platz belegt. Auf den meisten iPhones sind Fotos der größte Posten; Duplikate, große Videos und Bildschirmfotos aufzuräumen bringt meist am schnellsten Platz.</p>
+          <h3>1. Nachsehen, was Platz belegt</h3>
+          <p>Der farbige Balken unter <span class="path">Einstellungen › Allgemein › iPhone-Speicher</span> zeigt den Anteil von Apps, Fotos, Nachrichten, iOS und Systemdaten. Ganz oben in der Liste stehen die Apps, die am meisten Platz brauchen.</p>
+          <h3>2. Die Empfehlungen von iOS nutzen</h3>
+          <ul>
+            <li><b>Unbenutzte Apps auslagern:</b> Entfernt die App, behält aber ihre Dokumente und Daten. Nach dem erneuten Laden machst du dort weiter, wo du aufgehört hast.</li>
+            <li><b>Alte Chats löschen:</b> Stelle <span class="path">Einstellungen › Nachrichten › Nachrichten behalten</span> auf „1 Jahr“ oder „30 Tage“.</li>
+            <li><b>Große Anhänge prüfen:</b> Tippe im selben Menü auf Nachrichten und wähle „Große Anhänge prüfen“.</li>
+          </ul>
+          <h3>3. Die Mediathek aufräumen</h3>
+          <p>Fotos sind meist der größte Posten, und hier gewinnst du am meisten: doppelte und ähnliche Aufnahmen, unscharfe Bilder, vergessene Bildschirmaufnahmen und minutenlange 4K-Videos. Puf findet sie auf dem Gerät, sortiert sie in Kategorien und zeigt, wie viel Platz jede belegt.</p>
+          <h3>4. „Zuletzt gelöscht“ leeren</h3>
+          <p>Gelöschte Fotos belegen noch 30 Tage lang Speicher. Um den Platz sofort zurückzubekommen, <a href="#recently-deleted">leere das Album „Zuletzt gelöscht“</a>.</p>
+          <p class="callout">„Systemdaten“ enthalten Caches und temporäre Dateien, die iOS bei Bedarf selbst aufräumt. Einen verlässlichen Weg, diesen Bereich von Hand zu verkleinern, gibt es nicht.</p>
+        </div>
+
+        <div data-lang="en" class="flex-lang stack">
+          <header>
+            <h2>How to free up storage on your iPhone</h2>
+            <p class="meta">5-minute read</p>
+          </header>
+          <p class="tldr"><b>In short:</b> First check what takes up space in <span class="path">Settings › General › iPhone Storage</span>. On most iPhones Photos is the biggest item, and clearing duplicates, large videos and screenshots is usually the fastest win.</p>
+          <h3>1. See what's using space</h3>
+          <p>The colored bar in <span class="path">Settings › General › iPhone Storage</span> shows how much Apps, Photos, Messages, iOS and System Data use. The apps at the top of the list take up the most.</p>
+          <h3>2. Apply iOS's recommendations</h3>
+          <ul>
+            <li><b>Offload Unused Apps:</b> Removes the app but keeps its documents and data, so you pick up where you left off after reinstalling.</li>
+            <li><b>Delete old conversations:</b> Set <span class="path">Settings › Messages › Keep Messages</span> to "1 Year" or "30 Days".</li>
+            <li><b>Review large attachments:</b> On the same screen, tap Messages and choose "Review Large Attachments".</li>
+          </ul>
+          <h3>3. Clean up your photo library</h3>
+          <p>Photos is usually the largest item, and it's where you gain the most: duplicate and similar shots, blurry photos, forgotten screen recordings and minutes-long 4K videos. Puf finds them on your device, sorts them into categories and shows how much space each one uses.</p>
+          <h3>4. Empty Recently Deleted</h3>
+          <p>Deleted photos keep using space for 30 days. To get the space back right away, <a href="#recently-deleted">empty the Recently Deleted album</a>.</p>
+          <p class="callout">"System Data" holds caches and temporary files that iOS clears on its own when needed. There is no reliable way to shrink it by hand.</p>
+        </div>
+      </article>
+
+      <!-- 2. Duplicates -->
+      <article class="post" id="duplicates">
+        <div data-lang="tr" class="flex-lang stack">
+          <header>
+            <h2>Kopya ve benzer fotoğraflar nasıl bulunur ve silinir?</h2>
+            <p class="meta">4 dakikalık okuma</p>
+          </header>
+          <p class="tldr"><b>Kısaca:</b> iOS 16 ve sonrasında <span class="path">Fotoğraflar › Albümler › Yardımcı Programlar › Kopyalar</span> birebir kopyaları gösterir. Art arda çekilmiş benzer kareler ve bulanık fotoğraflar orada görünmez; bunlar için ayrı bir araç gerekir.</p>
+          <h3>iOS'un "Kopyalar" albümü</h3>
+          <p>Fotoğraflar uygulaması, aynı görüntünün farklı kopyalarını (örneğin hem mesajdan kaydedilmiş hem de kameradan çekilmiş aynı kare) otomatik olarak gruplar. "Birleştir"e dokunduğunda en yüksek kaliteli sürüm ve tüm bilgiler tek fotoğrafta toplanır, diğerleri Son Silinenler'e taşınır.</p>
+          <h3>Asıl yer kaplayanlar: benzer kareler</h3>
+          <p>Bir manzarayı ya da bir grubu fotoğraflarken çoğumuz aynı anı 5-10 kez çekeriz. Bu kareler birebir aynı olmadığı için "Kopyalar" albümüne düşmez. 12 MP'lik bir iPhone fotoğrafı HEIC olarak genellikle 1,5-3 MB tutar; 8 benzer karelik bir seri tek başına 20 MB'ı geçebilir.</p>
+          <h3>Puf ile benzer ve bulanık fotoğrafları temizleme</h3>
+          <ol>
+            <li>Puf'u aç ve fotoğraflarına "Tam Erişim" ver.</li>
+            <li>Akıllı Temizlik ekranında <b>Kopyalar</b>, <b>Benzerler</b> ve <b>Bulanık</b> kategorilerine bak.</li>
+            <li>Her grupta Puf en iyi kareyi işaretler; tutmak istediklerini seçip gerisini sil.</li>
+          </ol>
+          <p>Karşılaştırma görsel parmak iziyle cihazında yapılır; fotoğrafların hiçbir sunucuya yüklenmez.</p>
+        </div>
+
+        <div data-lang="de" class="flex-lang stack">
+          <header>
+            <h2>Doppelte und ähnliche Fotos finden und löschen</h2>
+            <p class="meta">4 Minuten Lesezeit</p>
+          </header>
+          <p class="tldr"><b>Kurz gesagt:</b> Ab iOS 16 zeigt <span class="path">Fotos › Alben › Sonstiges › Duplikate</span> exakte Duplikate. Ähnliche Serienaufnahmen und unscharfe Fotos erscheinen dort nicht; dafür brauchst du ein eigenes Werkzeug.</p>
+          <h3>Das Album „Duplikate“ von iOS</h3>
+          <p>Die Fotos-App gruppiert automatisch Kopien desselben Bildes, zum Beispiel ein Foto, das du aus einem Chat gespeichert und auch selbst aufgenommen hast. Tippst du auf „Zusammenführen“, landen die beste Qualität und alle Infos in einem Foto; die übrigen kommen in „Zuletzt gelöscht“.</p>
+          <h3>Die eigentlichen Platzfresser: ähnliche Aufnahmen</h3>
+          <p>Bei einer Landschaft oder einem Gruppenfoto drücken die meisten 5- bis 10-mal ab. Weil diese Bilder nicht identisch sind, landen sie nicht im Album „Duplikate“. Ein 12-MP-Foto braucht als HEIC meist 1,5–3 MB; eine Serie aus 8 ähnlichen Bildern kann allein über 20 MB groß sein.</p>
+          <h3>Ähnliche und unscharfe Fotos mit Puf aufräumen</h3>
+          <ol>
+            <li>Öffne Puf und erlaube den „Vollzugriff“ auf deine Fotos.</li>
+            <li>Sieh dir in der Smart-Bereinigung die Kategorien <b>Duplikate</b>, <b>Ähnlich</b> und <b>Unscharf</b> an.</li>
+            <li>Puf markiert in jeder Gruppe das beste Bild; wähle, was bleibt, und lösche den Rest.</li>
+          </ol>
+          <p>Der Vergleich läuft per visuellem Fingerabdruck auf deinem Gerät; kein Foto wird auf einen Server geladen.</p>
+        </div>
+
+        <div data-lang="en" class="flex-lang stack">
+          <header>
+            <h2>How to find and delete duplicate and similar photos</h2>
+            <p class="meta">4-minute read</p>
+          </header>
+          <p class="tldr"><b>In short:</b> On iOS 16 and later, <span class="path">Photos › Albums › Utilities › Duplicates</span> shows exact duplicates. Near-identical burst shots and blurry photos don't appear there; you need a separate tool for those.</p>
+          <h3>The iOS Duplicates album</h3>
+          <p>The Photos app groups copies of the same image automatically, for example a photo you saved from a chat and also took yourself. Tap "Merge" and the highest-quality version and all its details are kept in one photo; the others move to Recently Deleted.</p>
+          <h3>The real space eaters: similar shots</h3>
+          <p>When photographing a view or a group, most of us take the same moment 5 to 10 times. Because these shots aren't identical, they don't land in the Duplicates album. A 12 MP iPhone photo is usually 1.5–3 MB as HEIC, so a series of 8 similar shots can pass 20 MB on its own.</p>
+          <h3>Cleaning similar and blurry photos with Puf</h3>
+          <ol>
+            <li>Open Puf and allow "Full Access" to your photos.</li>
+            <li>In Smart Clean, look at the <b>Duplicates</b>, <b>Similar</b> and <b>Blurry</b> categories.</li>
+            <li>Puf marks the best shot in each group; choose what to keep and delete the rest.</li>
+          </ol>
+          <p>The comparison uses a visual fingerprint computed on your device; no photo is uploaded to a server.</p>
+        </div>
+      </article>
+
+      <!-- 3. Videos -->
+      <article class="post" id="videos">
+        <div data-lang="tr" class="flex-lang stack">
+          <header>
+            <h2>iPhone videoları ne kadar yer kaplar ve nasıl küçültülür?</h2>
+            <p class="meta">5 dakikalık okuma</p>
+          </header>
+          <p class="tldr"><b>Kısaca:</b> 4K 60 fps bir dakikalık video yaklaşık 400 MB'tır. Kamerayı "Yüksek Verimlilik" formatında tutmak ve eski büyük videoları HEVC ile sıkıştırmak en büyük tasarrufu sağlar.</p>
+          <h3>Bir dakikalık video ne kadar tutar?</h3>
+          <p>iOS, <span class="path">Ayarlar › Kamera › Video Kaydı</span> ekranında her ayar için tahmini boyutu gösterir. Yüksek Verimlilik (HEVC) formatında yaklaşık değerler:</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Ayar</th><th>1 dakika</th><th>10 dakika</th></tr></thead>
+              <tbody>
+                <tr><td>720p HD, 30 fps</td><td>~40 MB</td><td>~400 MB</td></tr>
+                <tr><td>1080p HD, 30 fps</td><td>~60 MB</td><td>~600 MB</td></tr>
+                <tr><td>1080p HD, 60 fps</td><td>~90 MB</td><td>~900 MB</td></tr>
+                <tr><td>4K, 30 fps</td><td>~170 MB</td><td>~1,7 GB</td></tr>
+                <tr><td>4K, 60 fps</td><td>~400 MB</td><td>~4 GB</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Yeni kayıtlarda yer kazanmak</h3>
+          <ul>
+            <li><span class="path">Ayarlar › Kamera › Formatlar</span> bölümünde <b>Yüksek Verimlilik</b> seçili olsun. "En Uyumlu" seçeneği fotoğrafları JPEG, videoları H.264 olarak kaydeder ve daha fazla yer kaplar.</li>
+            <li>Günlük çekimler için 1080p 30 fps çoğu zaman yeterlidir; 4K 60 fps'i özel anlara sakla.</li>
+          </ul>
+          <h3>Eski videoları sıkıştırmak</h3>
+          <p>Galerindeki büyük videolar silmek istemediğin anılarsa onları küçültebilirsin. Puf, videoları cihazında HEVC ile yeniden kodlar; tarih, konum ve favori bilgisi korunur. Örneğin 1,2 GB'lık 4K bir tatil videosu orta kalitede yaklaşık 300 MB'a iner. Orijinali silmek istersen iOS bunun için ayrıca onay ister.</p>
+        </div>
+
+        <div data-lang="de" class="flex-lang stack">
+          <header>
+            <h2>Wie viel Platz iPhone-Videos brauchen und wie du sie verkleinerst</h2>
+            <p class="meta">5 Minuten Lesezeit</p>
+          </header>
+          <p class="tldr"><b>Kurz gesagt:</b> Eine Minute Video in 4K mit 60 fps braucht etwa 400 MB. Die Kamera im Format „High Efficiency“ zu lassen und alte große Videos mit HEVC zu komprimieren, spart am meisten.</p>
+          <h3>Wie groß ist eine Minute Video?</h3>
+          <p>Unter <span class="path">Einstellungen › Kamera › Video aufnehmen</span> zeigt iOS für jede Einstellung die ungefähre Größe. Im Format High Efficiency (HEVC) sind das etwa:</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Einstellung</th><th>1 Minute</th><th>10 Minuten</th></tr></thead>
+              <tbody>
+                <tr><td>720p HD, 30 fps</td><td>~40 MB</td><td>~400 MB</td></tr>
+                <tr><td>1080p HD, 30 fps</td><td>~60 MB</td><td>~600 MB</td></tr>
+                <tr><td>1080p HD, 60 fps</td><td>~90 MB</td><td>~900 MB</td></tr>
+                <tr><td>4K, 30 fps</td><td>~170 MB</td><td>~1,7 GB</td></tr>
+                <tr><td>4K, 60 fps</td><td>~400 MB</td><td>~4 GB</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Bei neuen Aufnahmen sparen</h3>
+          <ul>
+            <li>Wähle unter <span class="path">Einstellungen › Kamera › Formate</span> die Option <b>High Efficiency</b>. „Maximale Kompatibilität“ speichert Fotos als JPEG und Videos als H.264 und braucht mehr Platz.</li>
+            <li>Für den Alltag reicht 1080p mit 30 fps meist aus; 4K mit 60 fps lohnt sich für besondere Momente.</li>
+          </ul>
+          <h3>Alte Videos komprimieren</h3>
+          <p>Große Videos, die du nicht löschen willst, kannst du verkleinern. Puf kodiert sie auf dem Gerät mit HEVC neu; Datum, Ort und Favoriten bleiben erhalten. Ein 1,2 GB großes 4K-Urlaubsvideo schrumpft in mittlerer Qualität zum Beispiel auf etwa 300 MB. Wenn du das Original löschen willst, fragt iOS dafür noch einmal nach.</p>
+        </div>
+
+        <div data-lang="en" class="flex-lang stack">
+          <header>
+            <h2>How much space iPhone videos take, and how to shrink them</h2>
+            <p class="meta">5-minute read</p>
+          </header>
+          <p class="tldr"><b>In short:</b> One minute of 4K video at 60 fps is about 400 MB. Keeping the camera on "High Efficiency" and compressing old large videos with HEVC saves the most.</p>
+          <h3>How big is a minute of video?</h3>
+          <p>iOS shows the approximate size for each option in <span class="path">Settings › Camera › Record Video</span>. With High Efficiency (HEVC) the figures are roughly:</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Setting</th><th>1 minute</th><th>10 minutes</th></tr></thead>
+              <tbody>
+                <tr><td>720p HD, 30 fps</td><td>~40 MB</td><td>~400 MB</td></tr>
+                <tr><td>1080p HD, 30 fps</td><td>~60 MB</td><td>~600 MB</td></tr>
+                <tr><td>1080p HD, 60 fps</td><td>~90 MB</td><td>~900 MB</td></tr>
+                <tr><td>4K, 30 fps</td><td>~170 MB</td><td>~1.7 GB</td></tr>
+                <tr><td>4K, 60 fps</td><td>~400 MB</td><td>~4 GB</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Saving space on new recordings</h3>
+          <ul>
+            <li>In <span class="path">Settings › Camera › Formats</span>, choose <b>High Efficiency</b>. "Most Compatible" saves photos as JPEG and videos as H.264, which take more space.</li>
+            <li>1080p at 30 fps is enough for most everyday clips; save 4K at 60 fps for special moments.</li>
+          </ul>
+          <h3>Compressing old videos</h3>
+          <p>If large videos in your library are memories you don't want to delete, you can shrink them. Puf re-encodes videos on your device with HEVC and keeps the date, location and favorite status. For example, a 1.2 GB 4K holiday video comes down to about 300 MB at medium quality. If you want to delete the original, iOS asks you to confirm that separately.</p>
+        </div>
+      </article>
+
+      <!-- 4. Recently Deleted -->
+      <article class="post" id="recently-deleted">
+        <div data-lang="tr" class="flex-lang stack">
+          <header>
+            <h2>Fotoğraf sildim ama yer açılmadı: "Son Silinenler"</h2>
+            <p class="meta">3 dakikalık okuma</p>
+          </header>
+          <p class="tldr"><b>Kısaca:</b> Silinen fotoğraf ve videolar 30 gün boyunca "Son Silinenler" albümünde kalır ve yer kaplamaya devam eder. Alanı hemen geri almak için bu albümü boşalt.</p>
+          <h3>Neden hemen yer açılmıyor?</h3>
+          <p>iOS, yanlışlıkla silinen anıları kurtarabilmen için silinen öğeleri 30 gün saklar. Bu sürede dosyalar hâlâ cihazındadır; bu yüzden 5 GB'lık video silsen bile Saklama Alanı ekranı değişmez.</p>
+          <h3>Son Silinenler nasıl boşaltılır?</h3>
+          <ol>
+            <li><span class="path">Fotoğraflar › Albümler</span>'i aç ve en alttaki <b>Yardımcı Programlar</b> bölümünden <b>Son Silinenler</b>'e dokun.</li>
+            <li>Face ID ya da parolanla albümün kilidini aç.</li>
+            <li>Sağ üstten <b>Seç</b>'e, ardından <b>Tümünü Sil</b>'e dokun ve onayla.</li>
+          </ol>
+          <p class="callout">Bu albümden silinenler kalıcı olarak gider ve geri getirilemez. Emin olmadığın öğeleri önce gözden geçir.</p>
+          <p>Puf ile toplu silme yaptıktan sonra uygulama, kazandığın alanı göstererek seni bu adıma yönlendirir.</p>
+        </div>
+
+        <div data-lang="de" class="flex-lang stack">
+          <header>
+            <h2>Fotos gelöscht, aber kein Platz frei: „Zuletzt gelöscht“</h2>
+            <p class="meta">3 Minuten Lesezeit</p>
+          </header>
+          <p class="tldr"><b>Kurz gesagt:</b> Gelöschte Fotos und Videos bleiben 30 Tage im Album „Zuletzt gelöscht“ und belegen weiter Speicher. Leere dieses Album, um den Platz sofort zurückzubekommen.</p>
+          <h3>Warum wird nicht sofort Platz frei?</h3>
+          <p>iOS hebt gelöschte Objekte 30 Tage auf, damit du versehentlich gelöschte Erinnerungen retten kannst. So lange liegen die Dateien noch auf dem Gerät; deshalb ändert sich die Speicheranzeige nicht, selbst wenn du 5 GB Video löschst.</p>
+          <h3>So leerst du „Zuletzt gelöscht“</h3>
+          <ol>
+            <li>Öffne <span class="path">Fotos › Alben</span> und tippe unten unter <b>Sonstiges</b> auf <b>Zuletzt gelöscht</b>.</li>
+            <li>Entsperre das Album mit Face ID oder deinem Code.</li>
+            <li>Tippe oben rechts auf <b>Auswählen</b>, dann auf <b>Alle löschen</b>, und bestätige.</li>
+          </ol>
+          <p class="callout">Was du hier löschst, ist endgültig weg und lässt sich nicht wiederherstellen. Prüfe unsichere Objekte vorher.</p>
+          <p>Nach dem Löschen größerer Mengen in Puf zeigt dir die App den gewonnenen Platz und führt dich zu diesem Schritt.</p>
+        </div>
+
+        <div data-lang="en" class="flex-lang stack">
+          <header>
+            <h2>I deleted photos but got no space back: Recently Deleted</h2>
+            <p class="meta">3-minute read</p>
+          </header>
+          <p class="tldr"><b>In short:</b> Deleted photos and videos stay in the Recently Deleted album for 30 days and keep using space. Empty that album to get the space back right away.</p>
+          <h3>Why isn't the space freed right away?</h3>
+          <p>iOS keeps deleted items for 30 days so you can rescue memories you deleted by mistake. During that time the files are still on your device, which is why the Storage screen doesn't change even after you delete 5 GB of video.</p>
+          <h3>How to empty Recently Deleted</h3>
+          <ol>
+            <li>Open <span class="path">Photos › Albums</span> and, under <b>Utilities</b> at the bottom, tap <b>Recently Deleted</b>.</li>
+            <li>Unlock the album with Face ID or your passcode.</li>
+            <li>Tap <b>Select</b> in the top right, then <b>Delete All</b>, and confirm.</li>
+          </ol>
+          <p class="callout">Anything deleted from this album is gone for good and cannot be restored. Review items you're unsure about first.</p>
+          <p>After a bulk delete in Puf, the app shows the space you gained and points you to this step.</p>
+        </div>
+      </article>
+
+      <!-- 5. iCloud -->
+      <article class="post" id="icloud">
+        <div data-lang="tr" class="flex-lang stack">
+          <header>
+            <h2>iCloud Fotoğrafları ve "iPhone Saklama Alanını Optimize Et"</h2>
+            <p class="meta">4 dakikalık okuma</p>
+          </header>
+          <p class="tldr"><b>Kısaca:</b> "Optimize Et" açıkken iPhone, orijinalleri iCloud'da tutup cihazda küçük önizlemeler saklar. Bu yerel alanı rahatlatır ama iCloud kotanı doldurur; asıl çözüm gereksiz fotoğrafları silmektir.</p>
+          <h3>Nasıl çalışır?</h3>
+          <p><span class="path">Ayarlar › [adın] › iCloud › Fotoğraflar</span> bölümünde iCloud Fotoğrafları açıksa iki seçenek vardır:</p>
+          <ul>
+            <li><b>iPhone Saklama Alanını Optimize Et:</b> Cihazda yer azaldığında orijinaller iCloud'da kalır, telefonda daha küçük sürümler tutulur. Bir fotoğrafı açtığında orijinal indirilir.</li>
+            <li><b>İndir ve Orijinalleri Sakla:</b> Tüm orijinaller hem iCloud'da hem cihazda durur.</li>
+          </ul>
+          <h3>Bilmen gerekenler</h3>
+          <ul>
+            <li>iCloud'un ücretsiz planı 5 GB'tır; bu alan yedekler ve fotoğraflar arasında paylaşılır.</li>
+            <li>iCloud Fotoğrafları senkronizedir: iPhone'da sildiğin fotoğraf iCloud'dan ve diğer cihazlarından da silinir.</li>
+            <li>Kopya ve benzer fotoğraflar iCloud'da da yer kaplar; temizlik hem telefonda hem iCloud'da alan açar.</li>
+          </ul>
+          <p>Puf, orijinali cihazda olmayan öğeleri de listeler. Bir videoyu sıkıştırırken orijinal gerekiyorsa iOS onu iCloud'dan indirir; bu indirme Apple ile senin aranda gerçekleşir.</p>
+        </div>
+
+        <div data-lang="de" class="flex-lang stack">
+          <header>
+            <h2>iCloud-Fotos und „iPhone-Speicher optimieren“</h2>
+            <p class="meta">4 Minuten Lesezeit</p>
+          </header>
+          <p class="tldr"><b>Kurz gesagt:</b> Mit „Speicher optimieren“ bleiben Originale in iCloud, auf dem iPhone liegen kleinere Versionen. Das entlastet das Gerät, füllt aber deinen iCloud-Speicher; die eigentliche Lösung ist, Überflüssiges zu löschen.</p>
+          <h3>So funktioniert es</h3>
+          <p>Sind iCloud-Fotos unter <span class="path">Einstellungen › [dein Name] › iCloud › Fotos</span> aktiv, gibt es zwei Optionen:</p>
+          <ul>
+            <li><b>iPhone-Speicher optimieren:</b> Wird der Platz knapp, bleiben Originale in iCloud und auf dem iPhone liegen kleinere Versionen. Öffnest du ein Foto, wird das Original geladen.</li>
+            <li><b>Laden und Originale behalten:</b> Alle Originale liegen in iCloud und auf dem Gerät.</li>
+          </ul>
+          <h3>Gut zu wissen</h3>
+          <ul>
+            <li>Der kostenlose iCloud-Speicher umfasst 5 GB, die sich Backups und Fotos teilen.</li>
+            <li>iCloud-Fotos werden synchronisiert: Was du auf dem iPhone löschst, verschwindet auch aus iCloud und von deinen anderen Geräten.</li>
+            <li>Duplikate und ähnliche Fotos belegen auch in iCloud Platz; Aufräumen schafft auf dem iPhone und in iCloud Luft.</li>
+          </ul>
+          <p>Puf listet auch Objekte, deren Original nicht auf dem Gerät liegt. Braucht das Komprimieren eines Videos das Original, lädt iOS es aus iCloud; dieser Download findet zwischen dir und Apple statt.</p>
+        </div>
+
+        <div data-lang="en" class="flex-lang stack">
+          <header>
+            <h2>iCloud Photos and "Optimize iPhone Storage" explained</h2>
+            <p class="meta">4-minute read</p>
+          </header>
+          <p class="tldr"><b>In short:</b> With "Optimize" on, originals stay in iCloud and the iPhone keeps smaller versions. That relieves the device but fills your iCloud plan; the real fix is deleting what you don't need.</p>
+          <h3>How it works</h3>
+          <p>When iCloud Photos is on in <span class="path">Settings › [your name] › iCloud › Photos</span>, there are two options:</p>
+          <ul>
+            <li><b>Optimize iPhone Storage:</b> When space runs low, originals stay in iCloud and smaller versions are kept on the phone. Opening a photo downloads the original.</li>
+            <li><b>Download and Keep Originals:</b> Every original is kept both in iCloud and on the device.</li>
+          </ul>
+          <h3>Good to know</h3>
+          <ul>
+            <li>The free iCloud plan is 5 GB, shared between backups and photos.</li>
+            <li>iCloud Photos is synced: a photo you delete on the iPhone is also removed from iCloud and your other devices.</li>
+            <li>Duplicates and similar shots take space in iCloud too, so cleaning up frees space on both the phone and iCloud.</li>
+          </ul>
+          <p>Puf also lists items whose original isn't on the device. If compressing a video needs the original, iOS downloads it from iCloud; that download is between you and Apple.</p>
+        </div>
+      </article>
+
+      <!-- 6. Screenshots & WhatsApp -->
+      <article class="post" id="screenshots">
+        <div data-lang="tr" class="flex-lang stack">
+          <header>
+            <h2>Ekran görüntüleri ve WhatsApp medyası: gizli yer yiyiciler</h2>
+            <p class="meta">3 dakikalık okuma</p>
+          </header>
+          <p class="tldr"><b>Kısaca:</b> Bir kere bakıp unuttuğumuz ekran görüntüleri ve sohbetlerden otomatik kaydedilen fotoğraflar zamanla gigabaytlara ulaşır. Otomatik kaydı kapatmak ve eskileri topluca temizlemek kalıcı çözümdür.</p>
+          <h3>Ekran görüntüleri</h3>
+          <p>Fotoğraflar uygulaması ekran görüntülerini <span class="path">Albümler › Medya Türleri › Ekran Görüntüleri</span> altında toplar. Çoğu bir adres, bir kod ya da bir tarif için alınır ve işi bitince unutulur. Puf'un Ekran Görüntüleri ve Ekran Kayıtları kategorileri, bunları tarihe göre sıralayıp kaydırarak hızla elemeni sağlar.</p>
+          <h3>WhatsApp ve diğer sohbet uygulamaları</h3>
+          <ul>
+            <li>WhatsApp'ta <span class="path">Ayarlar › Sohbetler › Fotoğraflar'a Kaydet</span> açıksa, gelen her fotoğraf ve video galerine de kopyalanır.</li>
+            <li>Bu seçeneği kapatırsan yeni medyalar yalnızca sohbette kalır.</li>
+            <li>Galerine zaten kaydedilmiş olanları Puf'taki WhatsApp albümünden toplu olarak inceleyebilirsin.</li>
+          </ul>
+          <h3>Küçük bir alışkanlık</h3>
+          <p>Ayda bir kez "Ekran Görüntüleri" kategorisini kaydırarak temizlemek birkaç dakika sürer ve kütüphanenin yeniden şişmesini önler.</p>
+        </div>
+
+        <div data-lang="de" class="flex-lang stack">
+          <header>
+            <h2>Bildschirmfotos und WhatsApp-Medien: die versteckten Platzfresser</h2>
+            <p class="meta">3 Minuten Lesezeit</p>
+          </header>
+          <p class="tldr"><b>Kurz gesagt:</b> Bildschirmfotos, die wir einmal ansehen und vergessen, und automatisch gespeicherte Chatbilder wachsen mit der Zeit auf Gigabytes an. Automatisches Speichern abschalten und Altes gesammelt aufräumen hilft dauerhaft.</p>
+          <h3>Bildschirmfotos</h3>
+          <p>Die Fotos-App sammelt Bildschirmfotos unter <span class="path">Alben › Medienarten › Bildschirmfotos</span>. Die meisten entstehen für eine Adresse, einen Code oder ein Rezept und werden danach vergessen. In Puf sortieren die Kategorien Bildschirmfotos und Bildschirmaufnahmen sie nach Datum, sodass du sie per Wischen schnell aussortierst.</p>
+          <h3>WhatsApp und andere Messenger</h3>
+          <ul>
+            <li>Ist in WhatsApp <span class="path">Einstellungen › Chats › In Fotos speichern</span> aktiv, landet jedes empfangene Foto und Video auch in deiner Mediathek.</li>
+            <li>Schaltest du die Option aus, bleiben neue Medien nur im Chat.</li>
+            <li>Was schon in der Mediathek liegt, prüfst du in Puf gesammelt über das WhatsApp-Album.</li>
+          </ul>
+          <h3>Eine kleine Gewohnheit</h3>
+          <p>Einmal im Monat die Kategorie „Bildschirmfotos“ per Wischen aufzuräumen, dauert ein paar Minuten und verhindert, dass die Mediathek wieder anschwillt.</p>
+        </div>
+
+        <div data-lang="en" class="flex-lang stack">
+          <header>
+            <h2>Screenshots and WhatsApp media: the hidden space eaters</h2>
+            <p class="meta">3-minute read</p>
+          </header>
+          <p class="tldr"><b>In short:</b> Screenshots we glance at once and forget, plus photos saved automatically from chats, grow into gigabytes over time. Turning off auto-save and clearing old ones in bulk fixes it for good.</p>
+          <h3>Screenshots</h3>
+          <p>The Photos app collects screenshots under <span class="path">Albums › Media Types › Screenshots</span>. Most are taken for an address, a code or a recipe and then forgotten. Puf's Screenshots and Screen Recordings categories sort them by date so you can weed them out quickly by swiping.</p>
+          <h3>WhatsApp and other messengers</h3>
+          <ul>
+            <li>If <span class="path">Settings › Chats › Save to Photos</span> is on in WhatsApp, every photo and video you receive is copied to your library too.</li>
+            <li>Turn it off and new media stays in the chat only.</li>
+            <li>Media already in your library can be reviewed in bulk from the WhatsApp album in Puf.</li>
+          </ul>
+          <h3>A small habit</h3>
+          <p>Swiping through the Screenshots category once a month takes a few minutes and keeps your library from swelling again.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="index.html" data-keep-lang><img src="logo.png" alt="Puf" width="28" height="28"></a>
+    <nav aria-label="Footer">
+      <a href="index.html" data-keep-lang><span data-lang="tr">Ana sayfa</span><span data-lang="de">Startseite</span><span data-lang="en">Home</span></a>
+      <a href="privacy.html" data-keep-lang><span data-lang="tr">Gizlilik Politikası</span><span data-lang="de">Datenschutz</span><span data-lang="en">Privacy Policy</span></a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener"><span data-lang="tr">Kullanım Koşulları</span><span data-lang="de">Nutzungsbedingungen</span><span data-lang="en">Terms of Use</span></a>
+    </nav>
+    <span>© <span data-year>2026</span> Puf</span>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
